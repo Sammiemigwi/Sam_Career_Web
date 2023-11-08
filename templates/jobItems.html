@@ -1,0 +1,18 @@
+  <div class = 'row mt-5 align-items-center'>
+    <div class = 'col-10'>
+       <h5>{{position['title']}}</h5> 
+        <div> 
+          Location : {{position['location']}}
+        </div>
+        {% if 'salary' in position%}
+        <div> 
+          Salary : {{position['salary']}} 
+        </div>
+        {% endif %}
+    </div>
+
+    <div class = 'col-2'>
+      <button type="button" class="btn btn-outline-primary">Apply</button>
+    </div>
+  </div>
+ 
